@@ -1,23 +1,18 @@
 "use strict";
-//import Figure from './Figure.js';
+import Figure from "./Figure.js";
 //import Circle from './Circle.js';
 //import Rectangle from './Rectangle.js';
 //import Square from './Square.js';
 
 const form = {
-    changeSelect(e) {
+	changeSelect(e) {},
+	init() {
+		console.log("Form init!");
 
-    },
-    init() {
-        console.log('Form init!');
-        
-    },
-    inputElementsWithLabel(label, id) {
-
-    },
-    submitForm(e) {
-
-    }
+		console.log("figure");
+	},
+	inputElementsWithLabel(label, id) {},
+	submitForm(e) {},
 };
 
 form.init();
