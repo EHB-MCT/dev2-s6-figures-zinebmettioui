@@ -1,6 +1,6 @@
 import Figure from "./Figure.js";
 
-export default class Circle extends figure  {
+export default class Circle extends Figure  {
     constructor(radius) {
         this.radius = radius;
          

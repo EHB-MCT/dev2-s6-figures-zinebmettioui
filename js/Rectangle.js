@@ -1,6 +1,6 @@
 import Figure from "./Figure.js";
 
-export default class Rectangle extends figure {
+export default class Rectangle extends Figure {
 	constructor(width, height) {
 		super("rectangle");
 		this.width = width;
@@ -8,15 +8,17 @@ export default class Rectangle extends figure {
 	}
 
 	get Area() {
-		this.width * this.height;
+		let areo = this.width * this.height;
+		return area;
 	}
 
 	get Circumference() {
-		(this.width + this.height) * 2;
+		let cf = this.width + this.height * 2;
+		return cf;
 	}
 
 	get htmlString() {
-		return`
+		return `
 		<div class="result">
 			<div class="figure rectangle" style="width: ${this.width}px; height: ${this.height}px;"></div>
 			<div class="infoBox">
@@ -32,14 +34,10 @@ export default class Rectangle extends figure {
 					<dd>${this.area} px</dd>
 
 					<dt>Circumference</dt>
-					<dd>${this.Circumference} px</dd>
+					<dd>${this.circumference} px</dd>
 				</dl>
 			</div>
 		</div>
-        `
+        `;
 	}
 }
-
-
-
-
