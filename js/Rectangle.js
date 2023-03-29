@@ -7,15 +7,18 @@ export default class Rectangle extends figure  {
     }
 }
 
-// get Area() {}
-     //this.width * this.height;
+/*
+get Area() {
+   this.width * this.height; 
+}
 
-// get Circumference() {}
-    //(this.width + this.height) * 2
-
-// get htmlString() {}
-    //return 
-    /*<div class="result">
+get Circumference() {
+    (this.width + this.height) * 2
+}
+    
+get htmlString() {
+    return 
+    <div class="result">
         <div class="figure rectangle" style="width: WIDTHpx; height: HEIGHTpx;"></div>
         <div class="infoBox">
             <h3>${this.name}</h3>
@@ -34,4 +37,6 @@ export default class Rectangle extends figure  {
             </dl>
         </div>
     </div>
-    */
+}
+    
+*/
