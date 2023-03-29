@@ -1,42 +1,45 @@
-export default class Rectangle extends figure  {
-    constructor(name, width, height) {
-        super('name');
-        this.width = width;
-        this.height = height;
-         
-    }
+import Figure from "./Figure.js";
+
+export default class Rectangle extends figure {
+	constructor(width, height) {
+		super("rectangle");
+		this.width = width;
+		this.height = height;
+	}
+
+	get Area() {
+		this.width * this.height;
+	}
+
+	get Circumference() {
+		(this.width + this.height) * 2;
+	}
+
+	get htmlString() {
+		return`
+		<div class="result">
+			<div class="figure rectangle" style="width: ${this.width}px; height: ${this.height}px;"></div>
+			<div class="infoBox">
+				<h3>${this.name}</h3>
+				<dl>
+					<dt>Height</dt>
+					<dd>${this.height} px</dd>
+
+					<dt>Width</dt>
+					<dd>${this.width} px</dd>
+
+					<dt>Area</dt>
+					<dd>${this.area} px</dd>
+
+					<dt>Circumference</dt>
+					<dd>${this.Circumference} px</dd>
+				</dl>
+			</div>
+		</div>
+        `
+	}
 }
 
-/*
-get Area() {
-   this.width * this.height; 
-}
 
-get Circumference() {
-    (this.width + this.height) * 2
-}
-    
-get htmlString() {
-    return 
-    <div class="result">
-        <div class="figure rectangle" style="width: WIDTHpx; height: HEIGHTpx;"></div>
-        <div class="infoBox">
-            <h3>${this.name}</h3>
-            <dl>
-            <dt>Height</dt>
-            <dd>HEIGHT px</dd>
 
-            <dt>Width</dt>
-            <dd>WIDTH px</dd>
 
-            <dt>Area</dt>
-            <dd>AREA px</dd>
-
-            <dt>Circumference</dt>
-            <dd>CIRCUMFERENCE px</dd>
-            </dl>
-        </div>
-    </div>
-}
-    
-*/
