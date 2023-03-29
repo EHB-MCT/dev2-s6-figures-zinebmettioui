@@ -10,6 +10,7 @@ const form = {
     },
     init() {
         console.log('Form init!');
+        
     },
     inputElementsWithLabel(label, id) {
 
